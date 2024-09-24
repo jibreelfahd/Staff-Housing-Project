@@ -1,0 +1,33 @@
+.application {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.application__align {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: -12rem;
+}
+
+.request__content {
+  margin: 2rem;
+  text-align: center;
+  width: 724px;
+  height: 1618px;
+}
+
+.request__content span {
+  font-size: 22px;
+  line-height: 22px;
+  color: #154b02;
+  font-weight: 500;
+  margin: 2rem;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}

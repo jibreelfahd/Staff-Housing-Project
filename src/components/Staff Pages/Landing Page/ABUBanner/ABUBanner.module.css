@@ -1,0 +1,30 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero__bar1 {
+  margin-top: 5.65px;
+  height: 4.5px;
+  width: 44px;
+  background: #ffffff;
+  border-radius: 7px;
+}
+
+.hero__bar2 {
+  margin: 6px 0;
+  height: 4.5px;
+  width: 92.92px;
+  background: #ffffff;
+  border-radius: 7px;
+}
+
+.hero__bar3 {
+  height: 4.5px;
+  width: 135px;
+  background: #ffffff;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}

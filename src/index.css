@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 18px;
+}

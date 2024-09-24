@@ -1,0 +1,49 @@
+.main {
+  margin-bottom: 2rem;
+}
+
+.form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form label {
+  line-height: 29px;
+  display: block;
+  margin-bottom: -0.1rem;
+  color: #154b02;
+}
+
+.form p {
+  color: #154b02;
+  margin-bottom: 1rem;
+}
+
+.form input {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 0.5px solid #aeb0c8;
+  color: #333;
+  font-style: italic;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1.5rem;
+  outline: none;
+  font-size: 16px;
+  font: inherit;
+}
+
+.form textarea {
+  width: 90%;
+  height: 300px;
+  border-radius: 20px;
+  padding: 1rem;
+  border: 0.5px solid #aeb0c8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  font: inherit;
+  margin-bottom: -20px;
+}
+
+input[type="text"]:focus {
+  border: 0.5px solid #154b02;
+}

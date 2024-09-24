@@ -1,0 +1,29 @@
+.hero--card {
+  background: #154b02 url("../../../assets/housing-estate.png");
+  margin: 1.5rem auto;
+  max-width: 1230px;
+  height: 10rem;
+  border-radius: 20px;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.hero__heading {
+  color: #ffffff;
+  line-height: 10.65px;
+  width: 112px;
+  height: 22px;
+  font-size: 10.65px;
+  text-align: center;
+}
+
+.hero--card h2 {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 0.5rem;
+}

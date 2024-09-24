@@ -1,0 +1,45 @@
+.hero--card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #070d3d url("../../../../assets/housing-estate.png");
+  margin: 1.5rem auto;
+  max-width: 1230px;
+  height: 20rem;
+  border-radius: 20px;
+}
+
+.hero__heading {
+  color: #ffffff;
+  line-height: 40px;
+  width: 399px;
+  height: 97px;
+  text-align: center;
+}
+
+.hero__paragraph {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  height: 32px;
+  width: 173px;
+  border-radius: 20px;
+  background: #ffffff;
+  margin-bottom: 5px;
+  border: none;
+  color: #070d3d;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: rgba(7, 13, 61, 0.7);
+}

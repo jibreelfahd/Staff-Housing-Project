@@ -1,0 +1,53 @@
+.request__main {
+  border-radius: 5px;
+  border: 0.5px solid #0dac43;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  color: #0dac43;
+  padding-top: 0.15rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.request__main__checked {
+  border-radius: 5px;
+  border: 0.5px solid #5c6292;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  color: #5c6292;
+  padding-top: 0.15rem;
+  margin-bottom: 1rem;
+}
+
+.request__main__maintenance {
+  border-radius: 5px;
+  border: 0.5px solid #ac330d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  color: #ac330d;
+  padding-top: 0.15rem;
+  margin-bottom: 1rem;
+}
+
+.request__main__retirement {
+  border-radius: 5px;
+  border: 0.5px solid #a87d0f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  color: #a87d0f;
+  padding-top: 0.15rem;
+  margin-bottom: 1rem;
+}
+
+.request__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.left {
+  margin-right: 35rem;
+}
+
+.time {
+  text-align: right;
+  padding-right: 0.5rem;
+  font-size: 12px;
+}
