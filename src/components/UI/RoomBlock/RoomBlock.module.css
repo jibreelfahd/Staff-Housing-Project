@@ -1,0 +1,83 @@
+
+.houses h2 {
+  border: 0.5px solid #ffffff;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #154b02;
+  width: 100px;
+  padding: 0.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.house__container {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 10px;
+}
+
+.single__house {
+  width: 62px;
+  height: 48px;
+  box-shadow: 0px 2.48px 2.48px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.occupied{
+  border: 1.24px solid #aeb0c8;
+  color: #aeb0c8;
+}
+
+.vacant{
+  border: 1.24px solid #154b02;
+  color: #154b02;
+}
+
+.maintenance {
+  border: 1.24px solid #ac330d;
+  color: #ac330d;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single__status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #154b02;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.single__status span {
+  display: block;
+  margin-right: 1rem;
+}
+
+.statusBox {
+  width: 15px;
+  height: 15px;
+}
+
+.occupied-status-box {
+  background: #aeb0c8;
+
+}
+
+.vacant-status-box {
+  background: #0dac43;
+
+}
+
+.maintenance-status-box {
+  background: #ac330d;
+}

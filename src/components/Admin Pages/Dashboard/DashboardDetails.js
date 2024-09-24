@@ -4,6 +4,7 @@ import styles from "./DashboardDetails.module.css";
 
 import Header from "../../UI/AdminHeader/AdminHeader";
 import SideBar from "../SideBar/SideBar";
+import RoomBlock from "../../UI/RoomBlock/RoomBlock";
 
 const DashboardDetails = () => {
   const areas = [
@@ -169,7 +170,7 @@ const DashboardDetails = () => {
               <span className={styles.area__name}>BZ</span>
               <span className={styles.area__number_houses}>
                 <p>Total</p>
-                <p>50</p>
+                <p>30</p>
               </span>
             </div>
             <div className={styles.single__area}>
@@ -177,7 +178,7 @@ const DashboardDetails = () => {
               <span className={styles.area__name}>F</span>
               <span className={styles.area__number_houses}>
                 <p>Total</p>
-                <p>60</p>
+                <p>30</p>
               </span>
             </div>
             <div className={styles.single__area}>
@@ -185,39 +186,13 @@ const DashboardDetails = () => {
               <span className={styles.area__name}>H</span>
               <span className={styles.area__number_houses}>
                 <p>Total</p>
-                <p>60</p>
+                <p>30</p>
               </span>
             </div>
           </button>
           <div className={styles.area__container}>
             {areas.map((area, index) => (
-              <div className={styles.houses} key={index}>
-                <h2>{area.name}</h2>
-                <div className={styles.house__container}>
-                  {area.houses.map((house) => (
-                    <div key={house.number} className={styles.single__house}>
-                      {house.number}
-                    </div>
-                  ))}
-                </div>
-                <div className={styles.status}>
-                  <span
-                    className={styles.statusBox}
-                  ></span>{" "}
-                  Occupied:{" "}
-                  {area.houses.filter((h) => h.status === "occupied").length}
-                  <span
-                    className={styles.statusBox}
-                  ></span>{" "}
-                  Vacant:{" "}
-                  {area.houses.filter((h) => h.status === "vacant").length}
-                  <span
-                    className={styles.statusBox}
-                  ></span>{" "}
-                  Needs Maintenance:{" "}
-                  {area.houses.filter((h) => h.status === "maintenance").length}
-                </div>
-              </div>
+              <RoomBlock area={area} key={index} />
             ))}
           </div>
         </div>
