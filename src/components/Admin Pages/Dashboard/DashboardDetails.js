@@ -151,7 +151,7 @@ const DashboardDetails = () => {
   ];
   return (
     <section>
-      <Header />
+      <Header headerType={'DASHBOARD'}/>
       <div className={styles.dashboard}>
         <SideBar />
         <div className={styles.dashboard__content}>

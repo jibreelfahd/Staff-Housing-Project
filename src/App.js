@@ -16,9 +16,12 @@ import ApplicationPage from "./components/Admin Pages/ApplicationPage/Applicatio
 import MaintenancePage from "./components/Admin Pages/MaintenancePage/MaintenancePage";
 import RetirementPage from "./components/Admin Pages/RetirementPage/RetirementPage";
 import Dashboard from "./components/Admin Pages/Dashboard/Dashboard";
+import DashboardDetails from "./components/Admin Pages/Dashboard/DashboardDetails";
+import OccupiedApartment from "./components/Admin Pages/ApartmentDetails/OccupiedApartment/OccupiedApartment";
+import VacantApartment from './components/Admin Pages/ApartmentDetails/VacantApartment/VacantApartment';
 */
 
-import DashboardDetails from "./components/Admin Pages/Dashboard/DashboardDetails";
+import DilapidatedApartment from "./components/Admin Pages/ApartmentDetails/DilapidatedApartment/DilapidatedApartment";
 
 const App = () => {
   return (
@@ -32,7 +35,10 @@ const App = () => {
       {/* <MaintenancePage /> */}
       {/* <RetirementPage /> */}
       {/* <Dashboard /> */}
-      <DashboardDetails />
+      {/* <DashboardDetails /> */}
+      {/* <OccupiedApartment /> */}
+      {/* <VacantApartment /> */}
+      <DilapidatedApartment />
     </>
   );
 };

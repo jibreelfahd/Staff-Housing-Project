@@ -13,18 +13,18 @@
 }
 
 .request__content {
-  margin: 2rem;
+  margin: 1rem auto;
   text-align: center;
   width: 724px;
   height: 1618px;
 }
 
-.request__content span {
+.request__content h2 {
   font-size: 22px;
   line-height: 22px;
   color: #154b02;
   font-weight: 600;
-  margin: 2rem;
+  margin: 2rem 0;
   display: block;
 }
 
