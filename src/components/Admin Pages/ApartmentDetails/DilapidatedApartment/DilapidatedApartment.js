@@ -16,7 +16,7 @@ const DilapidatedApartment = () => {
         <SideBar />
         <div className={styles.request__content}>
           <ProfileInformation
-            apartmentNumber={13}
+            apartmentNumber={10}
             status={"occupied"}
             name={"Ismail Sani Gambo"}
             dept={"Computer Science"}

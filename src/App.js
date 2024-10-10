@@ -2,10 +2,9 @@ import React from "react";
 
 import "./App.css";
 
-/*
-
-//STAFF PAGES
 import LandingPage from "./components/Staff Pages/Landing Page/LandingPage";
+/*
+//STAFF PAGES
 import ApplicationForm from "./components/Staff Pages/Application Page/ApplicationForm";
 import MaintenanceForm from '../components/Staff Pages/Maintenance Page/MaintenanceForm';
 import RetirementForm from './components/Staff Pages/Retirement Page/RetirementForm';
@@ -19,14 +18,16 @@ import Dashboard from "./components/Admin Pages/Dashboard/Dashboard";
 import DashboardDetails from "./components/Admin Pages/Dashboard/DashboardDetails";
 import OccupiedApartment from "./components/Admin Pages/ApartmentDetails/OccupiedApartment/OccupiedApartment";
 import VacantApartment from './components/Admin Pages/ApartmentDetails/VacantApartment/VacantApartment';
+import DilapidatedApartment from "./components/Admin Pages/ApartmentDetails/DilapidatedApartment/DilapidatedApartment";
+import ApplicationPageResponse from "./components/Admin Pages/ApplicationPage/ApplicationPageResponse";
+import AllocationPage from "./components/Admin Pages/ApplicationPage/AllocationPage";
 */
 
-import DilapidatedApartment from "./components/Admin Pages/ApartmentDetails/DilapidatedApartment/DilapidatedApartment";
 
 const App = () => {
   return (
     <>
-      {/* <LandingPage /> */}
+      <LandingPage />
       {/* <ApplicationForm /> */}
       {/* <MaintenanceForm /> */}
       {/* <RetirementForm /> */}
@@ -38,7 +39,9 @@ const App = () => {
       {/* <DashboardDetails /> */}
       {/* <OccupiedApartment /> */}
       {/* <VacantApartment /> */}
-      <DilapidatedApartment />
+      {/* <DilapidatedApartment /> */}
+      {/* <ApplicationPageResponse /> */}
+      {/* <AllocationPage /> */}
     </>
   );
 };

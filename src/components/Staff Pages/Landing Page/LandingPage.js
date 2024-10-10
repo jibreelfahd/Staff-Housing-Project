@@ -13,7 +13,7 @@ const LandingPage = () => {
       <Header />
       <HeroCard />
       <Content />
-      <section className={styles.page__about}>
+      <section id={'about'} className={styles.page__about}>
         <h2>ABOUT ABU STAFF MANAGEMENT HOUSING</h2>
         <p>
           Welcome to ABU Staff Housing Management, the dedicated platform
@@ -23,7 +23,7 @@ const LandingPage = () => {
           and efficient system.
         </p>
         <br />
-        <p>
+        <div>
           Services:
           <ul>
             <li>
@@ -43,7 +43,7 @@ const LandingPage = () => {
               straightforward procedures to handle these transitions seamlessly.
             </li>
           </ul>
-        </p><br/>
+        </div><br/>
         <p>
           At ABU Staff Housing Management, we are committed to providing a
           hassle-free and effective solution for managing staff housing needs.

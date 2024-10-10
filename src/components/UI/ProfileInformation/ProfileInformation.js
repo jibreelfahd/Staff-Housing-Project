@@ -17,8 +17,10 @@ const ProfileInformation = ({
   allocationDate,
   maintenanceStatus,
   profileStatus,
+  apartmentStatus
 }) => {
   const [isMaintenance, setIsMaintenance] = useState(false);
+  const [showApartment, setShowApartment] = useState(false);
   const [isProfile, setIsProfile] = useState(false);
 
   useEffect(() => {
@@ -29,19 +31,23 @@ const ProfileInformation = ({
     if (profileStatus) {
       setIsProfile(true);
     }
-  }, [maintenanceStatus, profileStatus]);
+    
+    if (apartmentStatus) {
+      setShowApartment(true);
+    }
+  }, [maintenanceStatus, profileStatus, apartmentStatus]);
 
   return (
     <>
-      <h2>APARTMENT {apartmentNumber}</h2>
+      {showApartment && <h2>APARTMENT {apartmentNumber}</h2>}
       <div className={styles.profile__info}>
         <div className={styles.span__info}>
-          <span>
+          {showApartment && <span>
             Status:{" "}
             <span className={`${status === "vacant" ? styles.vacant : ""}`}>
               {status}
             </span>
-          </span>
+          </span>}
           {isMaintenance && <h3>Needs Maintenance</h3>}
         </div>
         {isProfile && <p>PROFILE INFO</p>}

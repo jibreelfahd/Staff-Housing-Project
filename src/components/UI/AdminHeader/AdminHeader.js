@@ -2,10 +2,10 @@ import React from "react";
 
 import styles from "./AdminHeader.module.css";
 
-const AdminHeader = (props) => {
+const AdminHeader = ({ headerType}) => {
   return (
     <nav className={styles.nav}>
-      <span>{props.headerType}</span>
+      <span>{headerType}</span>
     </nav>
   );
 };

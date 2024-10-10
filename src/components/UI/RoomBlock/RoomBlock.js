@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import styles from "./RoomBlock.module.css";
 
-const RoomBlock = ({ area }) => {
+const RoomBlock = ({ area, status }) => {
+  const [showStatus, setShowStatus] = useState(false);
+
   const houseStatus = area.houses.map((houses) => {
     return houses.status;
   });
@@ -12,6 +14,12 @@ const RoomBlock = ({ area }) => {
       return console.log("THis is valid");
     }
   });
+
+  useEffect(() => {
+    if (status) {
+      setShowStatus(true);
+    }
+  }, [status])
 
   return (
     <>
@@ -33,7 +41,7 @@ const RoomBlock = ({ area }) => {
             </div>
           ))}
         </div>
-        <div className={styles.status}>
+        {showStatus && <div className={styles.status}>
           <div className={styles.single__status}>
             <span
               className={`${styles.statusBox} ${styles["occupied-status-box"]}`}
@@ -54,7 +62,7 @@ const RoomBlock = ({ area }) => {
             Needs Maintenance:{" "}
             {area.houses.filter((h) => h.status === "maintenance").length}
           </div>
-        </div>
+        </div>}
       </div>
     </>
   );

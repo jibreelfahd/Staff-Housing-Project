@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  margin: 0;
 }
 
 .showcase {
@@ -19,10 +20,14 @@ a {
 
 .showcase__single {
   background: #ffffff;
-  padding: 0.5rem;
+  padding: 0.4rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   height: 393px;
+}
+
+.showcase__single .showcase__link {
+  padding: 0;
 }
 
 .showcase__single h2 {

@@ -1,0 +1,74 @@
+.application {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.application__align {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: -12rem;
+}
+
+.request__content {
+  margin: 1rem auto;
+  text-align: center;
+  width: 724px;
+  height: 1618px;
+}
+
+.request__content span {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(270deg, #154b02 -18.38%, #3fff20 162.79%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.area__choosen {
+  text-align: left;
+  margin-bottom: 7rem;
+  margin-left: -5rem;
+}
+
+.area {
+  margin-top: 0.5rem;
+  border: 0.5px solid #aeb0c8;
+  background: #ffffff;
+  border-radius: 20px;
+  width: 724px;
+  color: #154b02;
+  padding: 0.7rem 1rem;
+  margin-bottom: -3rem;
+}
+
+.area__choosen p {
+  font-size: 1.2rem;
+  color: #154b02;
+}
+
+.request__content h2 {
+  font-size: 22px;
+  line-height: 22px;
+  color: #154b02;
+  font-weight: 600;
+  margin: 2rem 0;
+  display: block;
+}
+
+.area__container {
+  width: 724px;
+  margin-left: -5rem;
+  text-align: left;
+}
+
+.allocate__btn {
+  text-align: left;
+  margin-top: 2rem;
+}

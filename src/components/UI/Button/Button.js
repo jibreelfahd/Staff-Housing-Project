@@ -2,9 +2,9 @@ import React from "react";
 
 import styles from './Button.module.css';
 
-const Button = (props) => {
+const Button = ({ btnType }) => {
   return (
-    <button className={styles.btn}>{props.btnType}</button>
+    <button className={`${btnType === 'reject' ? styles.btn__reject : styles.btn}`}>{btnType}</button>
   )
 }
 

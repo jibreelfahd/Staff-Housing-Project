@@ -16,15 +16,16 @@ const OccupiedApartment = () => {
         <SideBar />
         <div className={styles.request__content}>
           <ProfileInformation
+            apartmentStatus={true}
             apartmentNumber={13}
             status={"occupied"}
             name={"Ismail Sani Gambo"}
             dept={"Computer Science"}
-            position={'Lecturer'}
-            employmentDate={'15th June 2023'}
-            id={'33e10'}
+            position={"Lecturer"}
+            employmentDate={"15th June 2023"}
+            id={"33e10"}
             age={38}
-            allocationDate={'12th April 2024'}
+            allocationDate={"12th April 2024"}
             profileStatus={true}
           />
           <h2>MAINTENANCE HISTORY</h2>
