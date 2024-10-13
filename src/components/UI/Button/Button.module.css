@@ -12,6 +12,7 @@
   cursor: pointer;
   text-transform: capitalize;
   display: block;
+  z-index: 1;
 }
 
 .btn__reject {

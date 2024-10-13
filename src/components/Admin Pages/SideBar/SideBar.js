@@ -11,8 +11,12 @@ import logoutImage from "../../../assets/logout.svg";
 
 //IMPORTS
 import ABUBanner from "../../UI/ABUBanner/ABUBanner";
+import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
+  const classes = `${styles.links} ${({ isActive }) =>
+    isActive ? styles.active : undefined }`;
+
   return (
     <main>
       <aside className={styles["side--bar"]}>
@@ -21,30 +25,34 @@ const SideBar = () => {
           <p>ABU STAFF HOUSING MANAGEMENT</p>
         </div>
         <div className={styles.side__links}>
-          <div className={styles.links}>
+          <NavLink to={"/admin/dashboard"} className={({ isActive }) =>
+    `${styles.links} ${isActive ? styles.active : ''}`}>
             <div className={styles.image}>
               <img src={dashboardImage} alt="Dashboard" />
             </div>
             <p>Dashboard</p>
-          </div>
-          <div className={styles.links}>
+          </NavLink>
+          <NavLink to={"/admin/request/application"} className={({ isActive }) =>
+    `${styles.links} ${isActive ? styles.active : ''}`} end>
             <div className={styles.image}>
               <img src={applicationImage} alt="Application pic" />
             </div>
             <p>Application Request</p>
-          </div>
-          <div className={styles.links}>
+          </NavLink>
+          <NavLink to={"/admin/request/maintenance"} className={({ isActive }) =>
+    `${styles.links} ${isActive ? styles.active : ''}`} end>
             <div className={styles.image}>
               <img src={maintenanceImage} alt="Maintenance Pic" />
             </div>
             <p>Maintenance Request</p>
-          </div>
-          <div className={styles.links}>
+          </NavLink>
+          <NavLink to={"/admin/request/retirement"} className={({ isActive }) =>
+    `${styles.links} ${isActive ? styles.active : ''}`}>
             <div className={styles.image}>
               <img src={retirementImage} alt="Retirement Pic" />
             </div>
             <p>Retirement Notice</p>
-          </div>
+          </NavLink>
         </div>
         <div className={styles.logout}>
           <img src={logoutImage} alt="Logout" />

@@ -1,8 +1,8 @@
 .application {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  overflow: hidden;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  /* overflow: hidden; */
 }
 
 .application__align {

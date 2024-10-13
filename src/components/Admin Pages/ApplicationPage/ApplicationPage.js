@@ -3,8 +3,8 @@ import React from "react";
 import styles from "./ApplicationPage.module.css";
 
 //IMPORTS
-import Header from "../../UI/AdminHeader/AdminHeader";
 import SideBar from "../SideBar/SideBar";
+import Header from "../../UI/AdminHeader/AdminHeader";
 import BackButton from "../../UI/BackButton/BackButton";
 import RequestBlock from "../../UI/RequestBlock/RequestBlock";
 

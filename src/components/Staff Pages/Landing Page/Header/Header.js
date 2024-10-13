@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Header.module.css";
+import styles from "./LandingHeader.module.css";
 import ABULOGO from "../../../../assets/ABU Logo.png";
 
 const Header = () => {

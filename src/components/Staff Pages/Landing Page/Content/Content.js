@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./Content.module.css";
 
@@ -15,7 +16,7 @@ const Content = () => {
       <div className={styles.showcase}>
         <div className={styles.showcase__single}>
           <img src={Quaters} alt="Showcase" />
-          <a className={styles.showcase__link} href="/">
+          <Link to={'/request/application'} className={styles.showcase__link}>
             <h2>Apply for Accomodation</h2>
             <div className={styles.showcase__content}>
               <p>
@@ -25,11 +26,11 @@ const Content = () => {
                 <img src={TriangleButton} alt="Triangle Button" />
               </div>
             </div>
-          </a>
+          </Link>
         </div>
         <div className={styles.showcase__single}>
           <img src={PictureOne} alt="Showcase" />
-          <a className={styles.showcase__link} href="/">
+          <Link to={'/request/maintenance'} className={styles.showcase__link}>
             <h2>Maintenance Request</h2>
             <div className={styles.showcase__content}>
               <p>
@@ -40,12 +41,12 @@ const Content = () => {
                 <img src={TriangleButton} alt="Triangle Button" />
               </div>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className={styles.showcase__single}>
           <img src={PictureTwo} alt="Showcase" />
-          <a className={styles.showcase__link} href="/">
+          <Link to={'/request/retirement'} className={styles.showcase__link}>
             <h2>Retirement Notice</h2>
             <div className={styles.showcase__content}>
               <p>
@@ -56,7 +57,7 @@ const Content = () => {
                 <img src={TriangleButton} alt="Triangle Button" />
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

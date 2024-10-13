@@ -24,6 +24,11 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   height: 393px;
+  transition: transform 0.3s ease;
+}
+
+.showcase__single:hover {
+  transform: translateY(-7px); 
 }
 
 .showcase__single .showcase__link {

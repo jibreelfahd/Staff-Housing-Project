@@ -44,6 +44,15 @@ main {
   background: linear-gradient(270deg, #154b02 -18.38%, #3fff20 162.79%);
 }
 
+.side__links .links.active {
+  color: #fff;
+  background: linear-gradient(270deg, #154b02 -18.38%, #3fff20 162.79%);
+}
+
+.side__links .links.active .image {
+  filter: brightness(1000%) contrast(1000%) saturate(0%);
+}
+
 .side__links .links:hover .image {
   filter: brightness(1000%) contrast(1000%) saturate(0%);
 }
@@ -62,9 +71,9 @@ main {
 
 .logout p {
   margin-left: 0.3rem;
-  background: linear-gradient(270deg, #154B02 -18.38%, #3FFF20 162.79%);
+  background: linear-gradient(270deg, #154b02 -18.38%, #3fff20 162.79%);
   background-clip: border-box;
-  -webkit-background-clip: text; 
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 550;
   line-height: 17.68px;

@@ -5,6 +5,7 @@ import styles from "./Dashboard.module.css";
 import Header from "../../UI/AdminHeader/AdminHeader";
 import SideBar from "../SideBar/SideBar";
 import RequestBlock from "../../UI/RequestBlock/RequestBlock";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -28,7 +29,7 @@ const Dashboard = () => {
               <span className={styles.area__name}>BZ</span>
               <span className={styles.area__number_houses}>
                 <p>Total</p>
-                <p>50</p>
+                <p>30</p>
               </span>
             </div>
             <div className={styles.single__area}>
@@ -36,7 +37,7 @@ const Dashboard = () => {
               <span className={styles.area__name}>F</span>
               <span className={styles.area__number_houses}>
                 <p>Total</p>
-                <p>60</p>
+                <p>30</p>
               </span>
             </div>
             <div className={styles.single__area}>
@@ -44,11 +45,12 @@ const Dashboard = () => {
               <span className={styles.area__name}>H</span>
               <span className={styles.area__number_houses}>
                 <p>Total</p>
-                <p>60</p>
+                <p>30</p>
               </span>
             </div>
           </button>
           <ul>
+            <Link className={styles.details} to={'/admin/dashboard/house/details'}>See Full Details {'>'} {'>'}</Link>
             <div>
               <span>RECENT NOTIFICATION</span>
             </div>
